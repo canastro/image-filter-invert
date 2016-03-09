@@ -1,23 +1,25 @@
-# image-contrast
+# image-invert
 
-Small library to apply a contrast transformation to a image.
+Small library to apply a invert transformation to a image.
 
 ## Install
 
 ```
-npm install image-contrast --save
+npm install image-filter-invert --save
 ```
 
 ## Usage
-It applies a contrast transformation to a base64 image. If you want a more complete library, please check image-filters that wraps this and other libraries to provide a more complete suite of image filters.
+It applies a invert transformation to a base64 image. If you want a more complete library, please check image-filters that wraps this and other libraries to provide a more complete suite of image filters.
+
+The default operation of this library is to consume imageData and return transformed imageData, but to facilitate a bit you can pass `asDataURL` as true to return a dataURL that you can inject into a image tag.
 
 JS file:
 ```js
-var imageContrast = require('image-contrast');
+var imageFilterInvert = require('image-invert');
 
-var result = imageContrast({
+var result = imageFilterInvert({
     data: IMAGE_DATA,
-    contrast: 30
+    asDataURL: true //if you want data to data transformation you don't need to include this
 });
 ```
 
@@ -43,9 +45,8 @@ element.setAttribute('src', options.url);
 ### How can I use the output of this?
 
 ```js
-var result = imageContrast({
-    data: IMAGE_DATA,
-    contrast: 30
+var result = imageFilterInvert({
+    data: IMAGE_DATA
 });
 
 var image = document.createElement('img');
