@@ -1,0 +1,34 @@
+{
+  "name": "image-filter-invert",
+  "version": "0.0.2",
+  "description": "Small library to apply a invert filter to a image",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify sandbox/sandbox.js > sandbox/bundle.js",
+    "serve": "http-server sandbox"
+  },
+  "author": "Ricardo Canastro",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canastro/image-filter-invert"
+  },
+  "bugs": {
+    "url": "https://github.com/canastro/image-filter-invert/issues"
+  },
+  "keywords": [
+    "image",
+    "image-invert",
+    "filter",
+    "filters",
+    "processing",
+    "manipulation",
+    "invert",
+    "transformation",
+    "pixel"
+  ],
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "http-server": "^0.9.0"
+  }
+}
