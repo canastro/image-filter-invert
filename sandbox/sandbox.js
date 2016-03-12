@@ -1,4 +1,4 @@
-var imageFilterInvert = require('../index');
+var imageFilterInvert = require('../src/index');
 
 function applyResults(selector, src) {
     var target;

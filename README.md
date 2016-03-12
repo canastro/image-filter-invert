@@ -1,3 +1,6 @@
+![build status](https://travis-ci.org/canastro/image-filter-invert.svg?branch=master)
+[![npm version](https://badge.fury.io/js/image-filter-invert.svg)](https://badge.fury.io/js/image-filter-invert)
+
 # image-invert
 
 Small library to apply a invert transformation to a image.

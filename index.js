@@ -53,7 +53,6 @@ function convertToDataURL(canvas, context, imageData) {
  * @name invert
  * @param {object} options
  * @param {string} options.data - data of a image extracted from a canvas
- * @param {string} options.contrast - contrast value to apply
  * @param {bool} options.asDataURL
  */
 module.exports = function invert(options) {
