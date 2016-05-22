@@ -50,11 +50,11 @@ element.setAttribute('src', options.url);
 ```js
 var result = imageFilterInvert({
     data: IMAGE_DATA
+}).then(function(result) {
+    var image = document.createElement('img');
+    image.setAttribute('src', result);
+
+    var target = document.getElementById('#dummy-target');
+    target.appendChild(image);
 });
-
-var image = document.createElement('img');
-image.setAttribute('src', result);
-
-var target = document.getElementById('#dummy-target');
-target.appendChild(image);
 ```
