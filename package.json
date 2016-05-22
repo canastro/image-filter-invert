@@ -1,6 +1,6 @@
 {
   "name": "image-filter-invert",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Small library to apply a invert filter to a image",
   "main": "src/index.js",
   "scripts": {
