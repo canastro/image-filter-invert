@@ -2,14 +2,14 @@ import worker from './worker';
 import { apply, getCanvas } from 'image-filter-core';
 
 /**
- * @name contrastImage
+ * @name invert
  * @param {object} options
  * @param {string} options.data - data of a image extracted from a canvas
  * @param {string} options.nWorkers - number of workers
  * @param {bool} options.asDataURL
  * @returns {promise}
  */
-export default function contrastImage(options) {
+export default function invert(options) {
     if (!options.data || !options.adjustment) {
         throw new Error('image-filter-invert:: invalid options provided');
     }
