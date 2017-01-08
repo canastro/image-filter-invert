@@ -12,5 +12,5 @@ module.exports =  function invert(data, nWorkers) {
         throw new Error('image-filter-invert:: invalid options provided');
     }
 
-    return imageFilterCore.apply(data, transform, nWorkers);
+    return imageFilterCore.apply(data, transform, null, nWorkers);
 };
